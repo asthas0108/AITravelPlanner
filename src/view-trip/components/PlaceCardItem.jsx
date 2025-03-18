@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaMapLocationDot } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 
+const UNSPLASH_URL = "https://api.unsplash.com/search/photos?page=1&query={PLACE}&client_id="+import.meta.env.VITE_ACCESS_KEY
+
 export default function PlaceCardItem({place}) {
+
+    const [photo, setPhoto] = useState('/pic3.jpg');
+
+    useEffect(() => {
+            if (place?.placeName) {
+                getPlacePhoto(place.placeName);
+            }
+        }, [place]);
+    
+        const getPlacePhoto = async (place) => {
+            try {
+                const response = await fetch(UNSPLASH_URL.replace('{PLACE}', encodeURIComponent(place)));
+                const data = await response.json();
+                
+                if (data.results.length > 0) {
+                    setPhoto(data.results[0].urls.regular); // Set first image from results
+                }
+            } catch (error) {
+                console.error("Error fetching image:", error);
+            }
+        };
+
   return (
     <div className='border rounded-xl p-3 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-pointer'>
         {/* <div className='w-1/4'>
             <img src='/placeholder.jpg' className='object-cover'/>
         </div> */}
         <div className="w-1/4">
-            <img src="/placeholder.jpg" className="w-full h-full object-cover" />
+            <img src={photo} className="w-full h-[145px] object-cover" />
         </div>
 
         <div className='w-3/4'>
