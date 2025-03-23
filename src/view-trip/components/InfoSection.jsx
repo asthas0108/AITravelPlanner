@@ -64,12 +64,12 @@ export default function InfoSection({trip}) {
 
                     <h2 className='p-1 px-3 bg-gray-100 rounded-full text-gray-800 text-xs md:text-lg'>🥂 No. of people travelling: {trip?.userSelection?.traveler}</h2>
                 </div>
-                <p className='text-xl mt-4'>Your perfect <span className='capitalize text-bold'>{trip?.userSelection?.location}</span> itinerary is ready! <br/> Get set for an amazing journey filled with unforgettable experiences! 🚗🥂</p>
+                <p className='text-xl mt-4'>Your perfect <span className='capitalize font-bold'>{trip?.userSelection?.location}</span> itinerary is ready! <br/> Get set for an amazing journey filled with unforgettable experiences! 🚗🥂</p>
             </div>
 
-            <Button>
+            {/* <Button>
                 <IoIosSend/>
-            </Button>
+            </Button> */}
         </div>
     </div>
     </>

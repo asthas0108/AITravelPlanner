@@ -38,14 +38,18 @@ export default function ViewTrip() {
         {/* info */}
 
         <InfoSection trip = {trip}/>
+        <hr/>
+
+        {/* daily plan */}
+
+        <PlacesToVisit trip={trip}/>
+        <hr className='mt-5'/>
 
         {/* hotels */}
 
         <Hotels trip={trip}/>
 
-        {/* daily plan */}
-
-        <PlacesToVisit trip={trip}/>
+        <hr className='mt-5'/>
 
         {/* <footer></footer> */}
 
