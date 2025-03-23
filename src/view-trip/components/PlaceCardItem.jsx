@@ -18,34 +18,20 @@ export default function PlaceCardItem({ place }) {
 
     const getPlacePhoto = async (place) => {
         try {
-            const response = await fetch(`/api/getPlacePhoto?place=${encodeURIComponent(place)}`);
+            const response = await fetch(PEXELS_URL.replace('{PLACE}', encodeURIComponent(place)), {
+                headers: {
+                    Authorization: PEXELS_API_KEY
+                }
+            });
             const data = await response.json();
             
             if (data.photos.length > 0) {
-                setPhoto(data.photos[0].src.medium);
+                setPhoto(data.photos[0].src.medium); // Set first image from results
             }
         } catch (error) {
             console.error("Error fetching image:", error);
         }
     };
-    
-
-    // const getPlacePhoto = async (place) => {
-    //     try {
-    //         const response = await fetch(PEXELS_URL.replace('{PLACE}', encodeURIComponent(place)), {
-    //             headers: {
-    //                 Authorization: PEXELS_API_KEY
-    //             }
-    //         });
-    //         const data = await response.json();
-            
-    //         if (data.photos.length > 0) {
-    //             setPhoto(data.photos[0].src.medium); // Set first image from results
-    //         }
-    //     } catch (error) {
-    //         console.error("Error fetching image:", error);
-    //     }
-    // };
 
     return (
         <div className='border rounded-xl p-3 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-pointer'>
