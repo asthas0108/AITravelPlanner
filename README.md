@@ -21,10 +21,14 @@ AI Travel Planning App is an intelligent travel assistant that helps you create 
   - Unsplash API (for destination images)
 
 ## 📷 Screenshots
-![image](https://github.com/user-attachments/assets/f9f819b1-10c5-4068-942b-8b372b2950e6)
-![image](https://github.com/user-attachments/assets/3cc6d4c6-9156-4102-a7f7-1ff265c8f60d)
+![image](https://github.com/user-attachments/assets/70b75f89-131e-46ef-9934-1ea42c3fd7e4)
+
 ![image](https://github.com/user-attachments/assets/d2390b0a-bab9-42fa-83d5-0c29a67f8eb0)
+
 ![image](https://github.com/user-attachments/assets/a4b210e2-01ab-4e0d-af5f-6f8e6c91284b)
+
+![image](https://github.com/user-attachments/assets/255325b1-308c-468d-bfb0-95a716a21e55)
+
 
 Made with ❤️ by Astha Singh
 
