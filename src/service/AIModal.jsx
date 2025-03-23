@@ -10,7 +10,7 @@ const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
   model: "gemini-2.0-flash",
-  systemInstruction: "generate travel plan for location : mumbai for 3 days for couple with a cheap budget. give me hotels options list with hotel name, address price, hotel image url, geo coordinates, rating, descriptions and suggest itinerarry with placename, place details, place image url, geo coordinates, ticket pricing, time to travel each of the location for 3 days with each day plan with best time to visit in json format.\n",
+  systemInstruction: "generate travel plan for location : mumbai for 3 days for couple with a cheap budget. give me hotels options list with hotel name as 'hotelName',hotel address as 'address', hotel price as 'price', hotel image url, geo coordinates,hotel rating as 'rating', descriptions and suggest itinerary with placeName, placeDetails, place image url, geo coordinates, ticket pricing, travelTime each of the location for 3 days with each day plan with bestTimeToVisit on each location in json format.\n",
 });
 
 const generationConfig = {
