@@ -149,7 +149,7 @@ export default function CreateTrip() {
         </div>
 
         <div>
-          <h2 className='text-xl my-3 font-medium'>How many days are you planning to travel?</h2>
+          <h2 className='text-xl my-3 font-medium'>How many days are you planning to travel? (atmost 5 days)</h2>
 
           <Input
             type="number" placeholder="Example. 3"
