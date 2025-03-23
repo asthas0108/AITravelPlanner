@@ -9,7 +9,7 @@ AI Travel Planning App is an intelligent travel assistant that helps you create 
 - 🗺️ **Personalized Itineraries** – Get a custom travel plan based on your interests and budget.
 - 🚀 **AI-Powered Suggestions** – Uses AI to suggest places to visit, activities, and dining options.
 - 📍 **Google Maps Integration** – View locations and directions directly within the app.
-- 📸 **Image Previews** – Get a glimpse of your destinations with Unsplash API integration.
+- 📸 **Image Previews** – Get a glimpse of your destinations with Unsplash adn Pexels API integration.
 - 🏖️ **Dream Destinations** – Supports itinerary planning for destinations worldwide.
 
 ## 🛠️ Tech Stack
@@ -18,7 +18,7 @@ AI Travel Planning App is an intelligent travel assistant that helps you create 
 - **Backend**: Firebase
 - **APIs Used**:
   - Gemini API (for AI-powered itinerary generation)
-  - Unsplash API (for destination images)
+  - Unsplash and Pexels API (for destination images)
 
 ## 📷 Screenshots
 ![image](https://github.com/user-attachments/assets/70b75f89-131e-46ef-9934-1ea42c3fd7e4)
