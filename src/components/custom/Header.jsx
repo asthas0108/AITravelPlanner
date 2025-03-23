@@ -89,16 +89,16 @@ export default function Header() {
                   <DialogHeader>
                     <DialogDescription>
                       
-                      <img src=''/>
-                      <h2 className='font-bold text-lg mt-7'>Sign In With Google</h2>
-                      <p>Sign in with Google authentication securely.</p>
+                      <img src='/photo.jpg'/>
+                      <h2 className='font-bold text-lg mt-7 text-black'>Sign In With Google Authentication securely.</h2>
+                      {/* <p className='font-bold text-xl mt-7 '>Sign in with Google authentication securely.</p> */}
         
                       <Button 
                         
                         onClick={login}
-                        className="w-full mt-5 flex gap-4 items-center"> 
-                        <FcGoogle className='h-10 w-10'/>
-                        Sign In
+                        className="w-full mt-5 flex gap-4 items-center text-lg"> 
+                        <FcGoogle className='h-[50px] w-[50px]'/>
+                        Sign In With Google
                       </Button>
         
                     </DialogDescription>
