@@ -1,12 +1,30 @@
-# React + Vite
+# AI Travel Planning App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌍 Plan Your Dream Trip in Seconds!
 
-Currently, two official plugins are available:
+AI Travel Planning App is an intelligent travel assistant that helps you create the perfect itinerary for your dream destination. Just enter a few details, and within seconds, get a customized travel plan tailored to your preferences!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🗺️ **Personalized Itineraries** – Get a custom travel plan based on your interests and budget.
+- 🚀 **AI-Powered Suggestions** – Uses AI to suggest places to visit, activities, and dining options.
+- 📍 **Google Maps Integration** – View locations and directions directly within the app.
+- 📸 **Image Previews** – Get a glimpse of your destinations with Unsplash API integration.
+- 🏖️ **Dream Destinations** – Supports itinerary planning for destinations worldwide.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js, Tailwind CSS
+- **Backend**: Firebase
+- **APIs Used**:
+  - Gemini API (for AI-powered itinerary generation)
+  - Unsplash API (for destination images)
+
+## 📷 Screenshots
+![image](https://github.com/user-attachments/assets/f9f819b1-10c5-4068-942b-8b372b2950e6)
+![image](https://github.com/user-attachments/assets/3cc6d4c6-9156-4102-a7f7-1ff265c8f60d)
+![image](https://github.com/user-attachments/assets/d2390b0a-bab9-42fa-83d5-0c29a67f8eb0)
+![image](https://github.com/user-attachments/assets/a4b210e2-01ab-4e0d-af5f-6f8e6c91284b)
+
+Made with ❤️ by Astha Singh
+
