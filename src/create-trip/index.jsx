@@ -18,6 +18,7 @@ import { db } from '@/service/FirebaseConfig';
 import { AiOutlineLoading3Quarters } from "react-icons/ai"
 import { useNavigate } from 'react-router-dom';
 import Header from '@/components/custom/Header';
+import { generatePDF } from '@/api/pdf';
 
 
 export default function CreateTrip() {
@@ -101,12 +102,28 @@ export default function CreateTrip() {
     const docID = Date.now().toString();
     const user = JSON.parse(localStorage.getItem("user"));
 
+    let parsedTrip;
+
+    try {
+    parsedTrip = JSON.parse(tripData); // ✅ Properly define and parse
+  } catch (error) {
+    console.error("Error parsing tripData JSON:", error);
+    toast.error("Something went wrong with the trip data");
+    setLoading(false);
+    return;
+  }
+
     await setDoc(doc(db, "AITrips", docID), {
       userSelection: formData,
       tripData: JSON.parse(tripData),
       userEmail: user.email,
       id: docID,
     });
+
+    await generatePDF({
+    ...formData,
+    itinerary: parsedTrip
+  });
 
     setLoading(false);
     navigate('/view-trip/'+docID)
