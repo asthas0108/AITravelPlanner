@@ -8,7 +8,8 @@ import requests
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/generate-pdf": {"origins": "http://localhost:5173"}})
+# CORS(app, resources={r"/generate-pdf": {"origins": "http://localhost:5173"}})
+CORS(app, resources={r"/generate-pdf": {"origins": "https://ai-travel-planner-gilt.vercel.app/"}})
 
 def download_image(url):
     try:
